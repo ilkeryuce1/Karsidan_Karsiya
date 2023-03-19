@@ -44,7 +44,10 @@ namespace Karsidan_Karsiya
                     {
                         Lst.LstBdenAya(Lst.Bnoktasındakiler[int.Parse(secim) - 1]);
                     }
-                    sonuc = Lst.Bnoktasındakiler[0].Beslen(Lst.Bnoktasındakiler.Last());
+                    if (Lst.Bnoktasındakiler.Count>0)
+                    {
+                        sonuc = Lst.Bnoktasındakiler[0].Beslen(Lst.Bnoktasındakiler.Last());
+                    }
                 }
                 if (!sonuc)
                 {

@@ -1,24 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
+using System;
 
 namespace Karsidan_Karsiya
 {
-    internal class Kurt:Hayvan
+    public class Kurt : Hayvan
     {
-        public override bool Beslen(Canlı c)
+        public Kurt()
         {
-
-            if (c is Kuzu)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            BeslenmeTuru = BeslenmeTuruConst.BeslenmeTuru.Etcil;
+        }
+        public override bool YemeyiDene(Canlı c, out string sonuc)
+        {
+            bool yedi = c is Hayvan;
+            sonuc = yedi ? $"Kurt {c.GetType().Name} objesini 7" : string.Empty;
+            return yedi;
         }
     }
 }

@@ -43,10 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeslenmeTuruConst.cs" />
     <Compile Include="Bitki.cs" />
     <Compile Include="Canlı.cs" />
     <Compile Include="Hayvan.cs" />
-    <Compile Include="IKontrol.cs" />
+    <Compile Include="IOyun.cs" />
     <Compile Include="KontrolC.cs" />
     <Compile Include="Kurt.cs" />
     <Compile Include="Kuzu.cs" />

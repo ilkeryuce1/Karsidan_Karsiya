@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static Karsidan_Karsiya.BeslenmeTuruConst;
 
 namespace Karsidan_Karsiya
 {
     public class Hayvan : Canlı
     {
-        public override bool Beslen(Canlı c)
+        public BeslenmeTuru BeslenmeTuru { get; set; }
+
+        public override bool YemeyiDene(Canlı c, out string sonuc)
         {
             throw new NotImplementedException();
         }

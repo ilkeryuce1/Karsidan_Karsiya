@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Karsidan_Karsiya
 {
     public class Bitki : Canlı
     {
-        public override bool Beslen(Canlı c)
+        public override bool YemeyiDene(Canlı c,out string sonuc)
         {
             throw new NotImplementedException();
         }

@@ -2,7 +2,7 @@
 {
     public abstract class Canlı
     {
-        public abstract bool Beslen(Canlı c);
-
+        
+        public abstract bool YemeyiDene(Canlı c,out string sonuc);
     }
 }

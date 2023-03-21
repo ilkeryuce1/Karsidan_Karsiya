@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Karsidan_Karsiya
 {
-    internal interface IKontrol
+    public static class BeslenmeTuruConst
     {
-        void Durum(bool sonuc);
+        public enum BeslenmeTuru
+        {
+            Etcil = 0,
+            Otcul,
+            Hepcil
+        }
     }
 }

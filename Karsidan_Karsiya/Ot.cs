@@ -2,17 +2,11 @@
 {
     internal class Ot : Bitki
     {
-        public override bool Beslen(Canlı c)
+        public override bool YemeyiDene(Canlı c, out string sonuc)
         {
-
-            if (c is Kuzu)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+    
+            sonuc =  string.Empty;
+            return false;
         }
     }
 }
